@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>fill light</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+	<body>
+		<h1>补光灯</h1>
+		<h3>Welcome to use the fill-light setting</h3>
+		<hr>
+		<form method="post" action="/set">
+			<label for="on">开关</label>
+			<input type="checkbox" name="on" id="on" checked>
+			<br>
+			<label>R</label>
+			<input type="number" name="r" min="0" max="255" step="1" value="255">
+			<label>G</label>
+			<input type="number" name="g" min="0" max="255" step="1" value="255">
+			<label>B</label>
+			<input type="number" name="b" min="0" max="255" step="1" value="255">
+			<br>
+			<label for="ssid">wifi名称:</label>
+			<input type="text" name="ssid", id="name">
+			<br>
+			<label for="passwd">wifi密码:</label>
+			<input type="text" name="passwd" id="passwd">
+			<br>
+			<label>设置wifi后需重启！重启后无反应则需检查wifi名称及密码是否有误，然后重新连接该热点并设置</label>
+			<br>
+			<input type="submit" value="提交">
+		</form>
+	</body>
+</html>
